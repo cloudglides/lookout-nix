@@ -16,7 +16,7 @@
 
     apps.${system}.default = {
       type = "app";
-      program = "${self.packages.${system}.default}/bin/lookout";
+      program = "${self.packages.${system}.default}/bin/lookout-desktop";
     };
   };
 }
