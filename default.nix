@@ -1,12 +1,12 @@
 {pkgs}: let
   pname = "lookout";
-  version = "0.1.2";
+  version = "0.3.3";
 in
   pkgs.stdenv.mkDerivation {
     inherit pname version;
     src = pkgs.fetchurl {
       url = "https://github.com/hackclub/lookout/releases/download/v${version}/Lookout_linux-${version}_amd64.deb";
-      sha256 = "sha256-JWJRRgMZbncLuPNw5jpreLR4dKvGZsnpkVkkwsgjMpk=";
+      sha256 = "sha256-g3DVHwOZKtb6WYjJCkuZxKuHJq4I6139uOmd5x9Iu1c=";
     };
     nativeBuildInputs = [pkgs.dpkg pkgs.autoPatchelfHook];
     buildInputs = with pkgs; [
